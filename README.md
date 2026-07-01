@@ -79,16 +79,20 @@ MKV files with HEVC/x265 may take longer to start while the first torrent pieces
 
 ## Quick start
 
-### 1. Clone and install
+### For Windows Users (Easiest)
+1. Extract the folder.
+2. Double-click **`start.bat`**.
+*This script automatically verifies Node.js, installs dependencies if they are missing, runs the server, and opens the app in your web browser.*
 
+### For macOS / Linux / Manual Setup
+#### 1. Clone and install
 ```bash
 git clone <your-repo-url>
 cd torrentweb
 npm install
 ```
 
-### 2. Start the server
-
+#### 2. Start the server
 ```bash
 npm start
 ```
@@ -148,9 +152,14 @@ Open **History** to re-stream recently watched magnets (stored locally in your b
 
 ### Subtitles
 
-1. While playing, open the subtitle button (**CC** on TV, icon on desktop/mobile player bar)
-2. **Search online** (needs Wyzie API key — see [Configuration](#configuration)) or **Upload** a `.srt` / `.vtt` file
-3. Fine-tune sync with `[` / `]` keys (earlier / later)
+1. While playing, open the subtitle button (**CC** on TV, icon on desktop/mobile player bar).
+2. **Search online** (needs Wyzie API key — see [Configuration](#configuration)) or **Upload** a `.srt` / `.vtt` file.
+3. Fine-tune sync with `[` / `]` keys (earlier / later).
+4. **Style Panel**: Customize the look of your subtitles inside the CC modal:
+   * **Size**: Scale font size from `0.5x` up to `2.5x` dynamically.
+   * **Color**: Select White, Yellow, or Cyan text presets.
+   * **Box**: Toggle a semi-transparent dark contrast background block for readability.
+   * *Styles are saved automatically in your browser's local storage.*
 
 On **LG / Samsung TV**: use the **CC** button and **A− / A+** for subtitle size. Use the **⛶** button on the TV bar for fullscreen (keeps subtitles visible).
 
